@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Simulation </title>
+    </head>
+  <body>
+
+    <div align = "center" >
+      <h2>Profil : </h2>
+    </div>
+
+    <div style="padding:10px; padding-left:325px" >
+      <p>
+        <li> Marié : <span style="color:red;">{{ info['marié'] }} </li> </span> <br> 
+        <li> Nb enfants : <span style="color:red;">{{ info['enfants']}} </li> </span> <br> 
+        <li> Salaire annuel : <span style="color:red;">{{ info['revenu'] }} </span> Euros </li>  <br> 
+        <li> Le nombre de part(s) fiscale est : <span style="color:red;">{{ info['nb_parts'] }}</span> </li> <br> 
+      </p>
+    </div>
+      
+  <div align = "center" >
+    <h2 > Calcul de l'impot de l'année {{ info['annee'] }} ... </h2>
+  </div>
+  
+  <div style="padding:10px; padding-left:325px" >
+    <p>
+      <li> Revenu imposable : <span style="color:red;">{{ info['revenu_imposable'] }} </span> Euros </li>  <br> 
+      <li> Quotient familial : <span style="color:red;">{{ info['quotient'] }} </li> </span> <br> 
+      <li> Taux d'imposition : <span style="color:red;">{{ info['taux'] }} % </li> </span> <br> 
+      <li> Décote : <span style="color:red;">{{ info['decote'] }}</span> Euros</li> <br> 
+      <li> Réduction : <span style="color:red;">{{ info['reduction'] }}</span> Euros</li> <br> 
+      <li> Taux personnalisé : <span style="color:red;">{{ info['taux_personnalisé'] }} %</span>  </li> <br> 
+      <li> Impot fiscale est : <span style="color:red;">{{ info['impot'] }}</span> </li> <br> 
+      <li> Prelevement à la source estimé à : <span style="color:red;">{{ info['impot_mensuel'] }} par mois</span> </li> <br> 
+
+
+
+    </p>
+  </div>
+  
+  </body>
+</html>

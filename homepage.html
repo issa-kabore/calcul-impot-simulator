@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Simulateur impot - Python </title>
+  </head>
+
+  <body>
+    <h1 style="text-align: center; font-family: Times New Roman; background-color:rgb(128, 63, 63)">
+      Projet Python pour le calcul de l'impot
+    </h1>
+    <div style="padding:20px;" align = "center">
+    
+      <p>
+        Les champs précédés d'une étoile (*) sont obligatoires
+      </p>
+    
+      <form action = "/estimate/" method="post">
+        <div style="padding:10px; padding-right:0">
+          <label for="Année">Année *</label> <br>
+          <input type="text" id="Année" name="Année" data-displayname= "Entrer l'année des revenus" size = 30>
+        </div>
+        <div style="padding:10px;padding-right:0">
+          <label for="marié">Etes-vous marié ? *</label> <br>
+          <input type="text" id="marié" name="marié" data-displayname="Taper oui ou non" size = 30 >
+        </div>
+        <div style="padding:10px;padding-right:0">
+          <label for="enfants">Combien d'enfants avez-vous ? *</label> <br>
+          <input type="text" id="enfants" name="enfants" data-displayname="Taper oui ou non" size = 30 >
+        </div>
+        <div style="padding:10px;padding-right:0">
+          <label for="Revenu">Revenu annuel (Euros) * </label> <br>
+          <input type="text" id="Revenu" name="Revenu" data-displayname="Entrer vos revenus net" size = 30>
+        </div>
+
+        <div style="padding:10px; text-align: center">
+          <button type="submit" class="btn btn-primary">Simuler</button>
+        </div>
+        
+      </form>
+    </div>
+  </body>
+</html>
